@@ -78,9 +78,5 @@ function! VisualSearch(direction) range
     let @" = l:saved_reg
 endfunction
 
-map sr :call FindAndReplaceAll('','')
 
-function! FindAndReplaceAll(from, to)
-  echo a:from
-  execute "%s/" . a:from . "/" . a:to . "/gc"
-endfunction 
+
